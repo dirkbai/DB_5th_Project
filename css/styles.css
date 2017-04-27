@@ -2,15 +2,24 @@
   Base Element Styles
 ==================================== */
 
-* {
-	box-sizing: border-box;
-}
-
 body {
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.6;
 	color: white;
+	display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
+.wrapper-Portfolio,
+.wrapper-Skills {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
 }
 
 h2{
@@ -22,11 +31,15 @@ h2{
 a {
 	color: white;
 	text-decoration: none;
-	display: block;
 }
 
 a:hover {
 	text-decoration: underline;
+}
+
+.profile-image {
+			object-fit: contain;
+	    margin: 2em 1em;
 }
 
 
@@ -36,13 +49,22 @@ a:hover {
 
 /*-------Header-------*/
 
+.main-header,
+  .menu,
+	.main-nav,
+	.Porfile-Text{
+    display: flex;
+		flex-direction: column;
+  }
+
 .main-haider {
 		background: linear-gradient(30deg, #222, #666);
 }
 
-nav {
+.menu {
 		width: 100%;
 		text-align: center;
+
 }
 
 .name a{
@@ -67,10 +89,6 @@ nav a {
 	text-transform: uppercase;
 }
 
-.profile-image {
-	width: 66.66%;
-	margin: 2em 16.66%;
-}
 
 .Porfile-Text p{
 	color: white;
@@ -78,7 +96,7 @@ nav a {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
 	font-weight: 300;
-	margin: 0 10%;
+		margin: 2em 1em;
 	padding-bottom: 2em;
 }
 
@@ -90,13 +108,18 @@ nav a {
 	margin: 1em 5%;
 }
 
-.menupoint a{
+.menupoint {
+	width: 100%;
 	margin: 2em 1em;
 	padding: 1em;
-	color: #4a4a4a;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
+	align-self: center;
+}
+
+.menupoint a {
+	color: #4a4a4a;
 }
 
 .content-image{
@@ -120,9 +143,12 @@ nav a {
 
 footer{
 		background-color: #fafafa;
+		display: flex;
 }
 
 .wrapper-footer {
+	display: flex;
+	flex-direction: column;
 	width: 95%;
 	margin: 2em 2.5% 0 2.5%;
 }
@@ -137,39 +163,33 @@ footer .text-footer{
 
 .back-to-top {
 color: #4a4a4a;
-float: right;
-width: 45%;
 margin: 2.5%;
 text-align: right;
+width: auto;
 }
 
-.bottom {
+.bottom{
 	width: 95%;
 	margin: 2em 2.5% 0 2.5%;
 	border-top: 1px;
 	border-color: #e7e7e7;
 	border-top-style:solid;
-
+	display: flex;
+	justify-content: space-between;
 }
 
 .bottom p{
-	float: left;
-	width: 45%;
-	margin: 2.5%;
+	margin: 1em;
 	color: #4a4a4a;
+	align-self: center;
 }
 
-.bottom-nav {
-	visibility: hidden;
-	float: right;
-	width: 0%;
-	margin: 0%;
+.bottom-nav{
+	display: none;
+	margin: 1em;
 	text-align: right;
 }
 
-#menu li{
-	color: red;
-}
 
 /* =================================
   Media Queries
@@ -178,12 +198,10 @@ text-align: right;
 @media (min-width: 768px){
 
 	.main-nav{
-		width: 60%;
-		margin: 1em 20%;
+		flex-direction: row;
 	}
 
 	.main-nav li{
-		float: right;
 		background-color: transparent;
 		width: 25%;
 		margin: 0;
@@ -200,19 +218,19 @@ text-align: right;
 .Porfile-Text {
 	width: 95%;
 	margin: 2em 2.5%;
-}
-
-.profile-image {
-	width: 40%;
-	float: right;
-	margin: 0;
+	flex-direction: row;
 }
 
 .Porfile-Text p {
-	width: 58%;
-	margin: 0 2% 0 0;
 	text-align: left;
 	font-size: 1.2em;
+	order: -1;
+	margin: 2em 0;
+}
+
+.profile-image {
+	    margin: 2em 0 2em 1em;
+
 }
 
 .wrapper-Portfolio {
@@ -223,8 +241,6 @@ text-align: right;
 .work-examples{
 	width: 48%;
 	margin: 0 0.75%;
-	display: inline-block;
-	vertical-align: top;
 }
 
 .work-examples p{
@@ -250,22 +266,24 @@ text-align: right;
 }
 
 .back-to-top{
-	visibility: hidden;
+	display: none;
 }
 
 .bottom-nav {
-	visibility: visible;
+	display: flex;
+	flex-direction: row-reverse;
 	width: 45%;
 	margin: 2.5%;
 }
 
-.bottom-nav a{
-	color: #4a4a4a;
-	float: right;
+.bottom-nav li{
 	margin-left: 5%;
 	text-align: right;
 }
 
+.bottom-nav a{
+	color: #4a4a4a;
+}
 
 }
 
@@ -280,13 +298,14 @@ body {
 /*-----------Haider--------------*/
 
 .main-haider {
-	width: 90%;
-	margin: 0 5%;
+	width: 92%;
+	margin: auto;
 	background: none;
 }
 
-nav {
+.menu {
 	margin: 3em 0;
+	flex-direction: row;
 }
 
 .name{
@@ -295,19 +314,17 @@ nav {
 	text-align: left;
 }
 
- h1{
-	float: left;
-}
 
 .main-nav{
 	width: 60%;
 	margin: 0;
-	float: right;
 	padding: 0;
+	justify-content: flex-end;
 }
 
 .main-nav li{
 	text-align: right;
+	padding: 0;
 	width: auto;
 	margin-left: 5%;
 }
@@ -317,9 +334,6 @@ nav {
 	margin: 0;
 }
 
-.text-header{
-	float: left;
-}
 
 /*-----------Content--------------*/
 
@@ -342,6 +356,9 @@ nav {
 	margin: 2em 5% 3em 5%;
 }
 
+.wrapper-footer{
+	padding-bottom: 1em;
+}
 
 .content-image {
 	width: 100%;
@@ -354,10 +371,4 @@ footer {
 }
 
 
-}
-
-.clearfix::after {
-	content: " ";
-	display: table;
-	clear: both;
 }
