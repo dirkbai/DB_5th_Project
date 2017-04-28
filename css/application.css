@@ -38,6 +38,15 @@ footer {
   display: flex;
   flex-direction: column; }
 
+/* =================================
+Text align
+==================================== */
+.menu, .work-examples {
+  text-align: center; }
+
+.bottom-nav {
+  text-align: right; }
+
 .main-haider {
   background: linear-gradient(30deg, #222, #666); }
 
@@ -46,8 +55,7 @@ footer {
   margin: 2em 1em; }
 
 .menu {
-  width: 100%;
-  text-align: center; }
+  width: 100%; }
 
 .wrapper-Portfolio,
 .wrapper-Skills {
@@ -59,8 +67,7 @@ footer {
   margin: 1em 0; }
 
 .work-examples {
-  color: #4a4a4a;
-  text-align: center; }
+  color: #4a4a4a; }
 
 .wrapper-footer {
   display: flex;
@@ -79,8 +86,7 @@ footer {
 
 .bottom-nav {
   display: none;
-  margin: 1em;
-  text-align: right; }
+  margin: 1em; }
 
 /*-----Header------*/
 .name a {

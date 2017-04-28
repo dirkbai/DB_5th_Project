@@ -19,7 +19,7 @@
 
 
 .bottom-nav{
+	@extend %right;
 	display: none;
 	margin: 1em;
-	text-align: right;
 }
