@@ -1,0 +1,83 @@
+/*-----Header------*/
+.name a{
+	color: #eee;
+}
+
+.name {
+	margin: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+nav a {
+	color: #4a4a4a;
+}
+
+.main-nav li{
+	margin: .5em 1em;
+	padding: 1em;
+	background-color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+.Porfile-Text p{
+	color: white;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+		margin: 2em 1em;
+	padding-bottom: 2em;
+}
+
+/*-----Content------*/
+
+
+
+.menupoint {
+	width: 100%;
+	margin: 2em 1em;
+	padding: 1em;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	align-self: center;
+}
+
+.menupoint a {
+	color: #4a4a4a;
+}
+
+.work-examples p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	width: 90%;
+	margin: 1em 5%;
+}
+
+/*-----Footer------*/
+
+
+footer .text-footer{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	color: #003173;
+	text-align: center;
+	border-bottom: 1px;
+}
+
+.back-to-top {
+color: #4a4a4a;
+margin: 2.5%;
+text-align: right;
+width: auto;
+}
+
+
+.bottom p{
+	margin: 1em;
+	color: #4a4a4a;
+	align-self: center;
+}

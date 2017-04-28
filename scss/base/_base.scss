@@ -1,0 +1,51 @@
+
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	color: white;
+	display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+.wrapper-Portfolio,
+.wrapper-Skills {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+h2{
+	font-weight: 700;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+footer{
+		background-color: #fafafa;
+		display: flex;
+}
+
+
+.main-header,
+  .menu,
+	.main-nav,
+	.Porfile-Text{
+    display: flex;
+		flex-direction: column;
+  }

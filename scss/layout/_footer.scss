@@ -1,0 +1,25 @@
+.wrapper-footer {
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	margin: 2em 2.5% 0 2.5%;
+}
+
+
+.bottom{
+	width: 95%;
+	margin: 2em 2.5% 0 2.5%;
+	border-top: 1px;
+	border-color: #e7e7e7;
+	border-top-style:solid;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.bottom-nav{
+	display: none;
+	margin: 1em;
+	text-align: right;
+}
