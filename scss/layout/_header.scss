@@ -1,5 +1,5 @@
 .main-haider {
-		background: linear-gradient(30deg, #222, #666);
+		@extend %gradient;
 }
 
 .profile-image {

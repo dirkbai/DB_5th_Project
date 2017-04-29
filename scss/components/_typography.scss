@@ -10,22 +10,22 @@
 }
 
 nav a {
-	color: #4a4a4a;
+	color: $gray;
 }
 
 .main-nav li{
 	margin: .5em 1em;
 	padding: 1em;
-	background-color: white;
+	background-color: $white;
 	font-weight: 700;
 	text-transform: uppercase;
 }
 
 
 .Porfile-Text p{
-	color: white;
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
+	@extend %centered;
+	color: $white;
+	font-family: 'Roboto', $stack-sans-serif;
 	font-size: 1em;
 	font-weight: 300;
 		margin: 2em 1em;
@@ -37,21 +37,21 @@ nav a {
 
 
 .menupoint {
+	@extend %centered;
 	width: 100%;
 	margin: 2em 1em;
 	padding: 1em;
 	font-weight: 700;
 	text-transform: uppercase;
-	text-align: center;
 	align-self: center;
 }
 
 .menupoint a {
-	color: #4a4a4a;
+	color: $gray;
 }
 
 .work-examples p{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', $stack-sans-serif;
 	font-size: 1em;
 	width: 90%;
 	margin: 1em 5%;
@@ -61,23 +61,23 @@ nav a {
 
 
 footer .text-footer{
-	font-family: 'Roboto', sans-serif;
+	@extend %centered;
+	font-family: 'Roboto', $stack-sans-serif;
 	font-size: 1em;
-	color: #003173;
-	text-align: center;
+	color: $blue;
 	border-bottom: 1px;
 }
 
 .back-to-top {
-color: #4a4a4a;
+@extend %right;
+color: $gray;
 margin: 2.5%;
-text-align: right;
 width: auto;
 }
 
 
 .bottom p{
 	margin: 1em;
-	color: #4a4a4a;
+	color: $gray;
 	align-self: center;
 }

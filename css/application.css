@@ -1,10 +1,34 @@
+/* =================================
+Text align
+==================================== */
+.menu, .work-examples, .Porfile-Text p, .menupoint, footer .text-footer {
+  text-align: center; }
+
+.bottom-nav, .back-to-top {
+  text-align: right; }
+
+/* =================================
+Color / Gradiant
+==================================== */
+.main-haider {
+  background: linear-gradient(30deg, #222, #666); }
+
+/* =================================
+Font Stack
+==================================== */
+/* =================================
+Breakpoints
+==================================== */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6;
   color: white;
   display: flex;
   flex-direction: column;
   min-height: 100vh; }
+  @media (min-width: 1024px) {
+    body {
+      background: linear-gradient(30deg, #222, #666); } }
 
 .wrapper-Portfolio,
 .wrapper-Skills {
@@ -23,9 +47,8 @@ h2 {
 a {
   color: white;
   text-decoration: none; }
-
-a:hover {
-  text-decoration: underline; }
+  a:hover {
+    text-decoration: underline; }
 
 footer {
   background-color: #fafafa;
@@ -37,18 +60,6 @@ footer {
 .Porfile-Text {
   display: flex;
   flex-direction: column; }
-
-/* =================================
-Text align
-==================================== */
-.menu, .work-examples {
-  text-align: center; }
-
-.bottom-nav {
-  text-align: right; }
-
-.main-haider {
-  background: linear-gradient(30deg, #222, #666); }
 
 .profile-image {
   object-fit: contain;
@@ -109,8 +120,7 @@ nav a {
 
 .Porfile-Text p {
   color: white;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1em;
   font-weight: 300;
   margin: 2em 1em;
@@ -123,30 +133,27 @@ nav a {
   padding: 1em;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
   align-self: center; }
 
 .menupoint a {
   color: #4a4a4a; }
 
 .work-examples p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1em;
   width: 90%;
   margin: 1em 5%; }
 
 /*-----Footer------*/
 footer .text-footer {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1em;
   color: #003173;
-  text-align: center;
   border-bottom: 1px; }
 
 .back-to-top {
   color: #4a4a4a;
   margin: 2.5%;
-  text-align: right;
   width: auto; }
 
 .bottom p {

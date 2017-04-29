@@ -9,3 +9,31 @@ Text align
 %right {
   text-align: right;
 }
+
+/* =================================
+Color / Gradiant
+==================================== */
+
+$gray     : #4a4a4a;
+$lightgray: #e7e7e7;
+$white    : white;
+$blue     : #003173;
+
+%gradient {
+  background: linear-gradient(30deg, #222, #666);
+}
+
+/* =================================
+Font Stack
+==================================== */
+
+$stack-sans-serif: sans-serif;
+$stack-roboto: 'Roboto', $stack-sans-serif;
+$stack-monserrat: 'Montserrat', $stack-sans-serif;
+
+/* =================================
+Breakpoints
+==================================== */
+
+$br-tablet  : '(min-width: 768px)';
+$br-screen  : '(min-width: 1024px)';
