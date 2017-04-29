@@ -1,15 +1,42 @@
 .wrapper-Portfolio,
 .wrapper-Skills {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
 	width: 90%;
 	margin: 1em 5%;
+	@media #{$br-tablet}{
+		width: 95%;
+		margin: 2em 2.5%;
+	}
+	@media #{$br-screen}{
+		background: white;
+		padding-bottom: 5em;
+	}
 }
 
 .content-image{
 	width: 100%;
 	margin: 1em 0;
+	@media #{$br-screen}{
+		margin: 0;
+	}
 }
 
 .work-examples{
 	@extend %centered;
 	color: $gray;
+	flex-grow: 1;
+	@media #{$br-tablet}{
+		width: 48%;
+		margin: 0 0.75%;
+
+	}
+}
+
+.wrapper-Portfolio .work-examples{
+	@media #{$br-screen}{
+		width: 30%;
+		margin: 0 1.522%;
+	}
 }

@@ -1,13 +1,55 @@
 .main-haider {
 		@extend %gradient;
+		@media #{$br-screen}{
+			width: 92%;
+			margin: auto;
+			background: none;
+		}
+}
+
+.main-nav{
+	@media #{$br-tablet}{
+			flex-direction: row;
+	}
+		@media #{$br-screen}{
+			width: 60%;
+			margin: 0;
+			padding: 0;
+			justify-content: flex-end;
+		}
+		& li{
+			margin: .5em 1em;
+			padding: 1em;
+			background-color: $white;
+			font-weight: 700;
+			text-transform: uppercase;
+			@media #{$br-tablet}{
+				background-color: transparent;
+				width: 25%;
+				margin: 0;
+			}
+			@media #{$br-screen}{
+				text-align: right;
+				padding: 0;
+				width: auto;
+				margin-left: 5%;
+				}
+		}
 }
 
 .profile-image {
 			object-fit: contain;
 	    margin: 2em 1em;
+			@media #{$br-tablet}{
+				 margin: 2em 0 2em 1em;
+			}
 }
 
 .menu {
 	@extend %centered;
 		width: 100%;
+	@media #{$br-screen}{
+		margin: 3em 0;
+		flex-direction: row;
+	}
 }

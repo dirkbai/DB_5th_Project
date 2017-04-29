@@ -3,6 +3,12 @@
 	flex-direction: column;
 	width: 95%;
 	margin: 2em 2.5% 0 2.5%;
+	@media #{$br-tablet}{
+			padding-bottom: 7em;
+	}
+	@media #{$br-screen}{
+			padding-bottom: 1em;
+	}
 }
 
 
@@ -22,4 +28,21 @@
 	@extend %right;
 	display: none;
 	margin: 1em;
+	@media #{$br-tablet}{
+		display: flex;
+		flex-direction: row-reverse;
+		width: 45%;
+		margin: 2.5%;
+	}
+	& li{
+		@media #{$br-tablet}{
+		margin-left: 5%;
+		text-align: right;
+		}
+	}
+	& a{
+		@media #{$br-tablet}{
+		color: #4a4a4a;
+		}
+	}
 }

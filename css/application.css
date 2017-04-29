@@ -17,12 +17,15 @@ Color / Gradiant
 Font Stack
 ==================================== */
 /* =================================
+Text Mixin
+==================================== */
+/* =================================
 Breakpoints
 ==================================== */
 body {
+  color: white;
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
-  color: white;
   display: flex;
   flex-direction: column;
   min-height: 100vh; }
@@ -30,19 +33,14 @@ body {
     body {
       background: linear-gradient(30deg, #222, #666); } }
 
-.wrapper-Portfolio,
-.wrapper-Skills {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap; }
+nav a {
+  color: #4a4a4a; }
+  @media (min-width: 768px) {
+    nav a {
+      color: white; } }
 
 ul {
   list-style: none; }
-
-h2 {
-  font-weight: 700;
-  font-size: 1em;
-  text-transform: uppercase; }
 
 a {
   color: white;
@@ -53,6 +51,10 @@ a {
 footer {
   background-color: #fafafa;
   display: flex; }
+  @media (min-width: 1024px) {
+    footer {
+      width: 95%;
+      margin: 2em 2.5%; } }
 
 .main-header,
 .menu,
@@ -61,30 +63,102 @@ footer {
   display: flex;
   flex-direction: column; }
 
+@media (min-width: 1024px) {
+  .main-haider {
+    width: 92%;
+    margin: auto;
+    background: none; } }
+
+@media (min-width: 768px) {
+  .main-nav {
+    flex-direction: row; } }
+@media (min-width: 1024px) {
+  .main-nav {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end; } }
+.main-nav li {
+  margin: .5em 1em;
+  padding: 1em;
+  background-color: white;
+  font-weight: 700;
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    .main-nav li {
+      background-color: transparent;
+      width: 25%;
+      margin: 0; } }
+  @media (min-width: 1024px) {
+    .main-nav li {
+      text-align: right;
+      padding: 0;
+      width: auto;
+      margin-left: 5%; } }
+
 .profile-image {
   object-fit: contain;
   margin: 2em 1em; }
+  @media (min-width: 768px) {
+    .profile-image {
+      margin: 2em 0 2em 1em; } }
 
 .menu {
   width: 100%; }
+  @media (min-width: 1024px) {
+    .menu {
+      margin: 3em 0;
+      flex-direction: row; } }
 
 .wrapper-Portfolio,
 .wrapper-Skills {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
   width: 90%;
   margin: 1em 5%; }
+  @media (min-width: 768px) {
+    .wrapper-Portfolio,
+    .wrapper-Skills {
+      width: 95%;
+      margin: 2em 2.5%; } }
+  @media (min-width: 1024px) {
+    .wrapper-Portfolio,
+    .wrapper-Skills {
+      background: white;
+      padding-bottom: 5em; } }
 
 .content-image {
   width: 100%;
   margin: 1em 0; }
+  @media (min-width: 1024px) {
+    .content-image {
+      margin: 0; } }
 
 .work-examples {
-  color: #4a4a4a; }
+  color: #4a4a4a;
+  flex-grow: 1; }
+  @media (min-width: 768px) {
+    .work-examples {
+      width: 48%;
+      margin: 0 0.75%; } }
+
+@media (min-width: 1024px) {
+  .wrapper-Portfolio .work-examples {
+    width: 30%;
+    margin: 0 1.522%; } }
 
 .wrapper-footer {
   display: flex;
   flex-direction: column;
   width: 95%;
   margin: 2em 2.5% 0 2.5%; }
+  @media (min-width: 768px) {
+    .wrapper-footer {
+      padding-bottom: 7em; } }
+  @media (min-width: 1024px) {
+    .wrapper-footer {
+      padding-bottom: 1em; } }
 
 .bottom {
   width: 95%;
@@ -98,33 +172,60 @@ footer {
 .bottom-nav {
   display: none;
   margin: 1em; }
+  @media (min-width: 768px) {
+    .bottom-nav {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 45%;
+      margin: 2.5%; } }
+  @media (min-width: 768px) {
+    .bottom-nav li {
+      margin-left: 5%;
+      text-align: right; } }
+  @media (min-width: 768px) {
+    .bottom-nav a {
+      color: #4a4a4a; } }
 
 /*-----Header------*/
 .name a {
-  color: #eee; }
+  color: white; }
 
 .name {
   margin: 0;
   padding-top: 30px;
   padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    .name {
+      padding: 2em 0 .7em 0; } }
+  @media (min-width: 1024px) {
+    .name {
+      width: 40%;
+      padding: 0;
+      text-align: left; } }
 
-nav a {
-  color: #4a4a4a; }
-
-.main-nav li {
-  margin: .5em 1em;
-  padding: 1em;
-  background-color: white;
-  font-weight: 700;
-  text-transform: uppercase; }
+@media (min-width: 768px) {
+  .Porfile-Text {
+    width: 95%;
+    margin: 2em 2.5%;
+    flex-direction: row; } }
+@media (min-width: 1024px) {
+  .Porfile-Text {
+    width: 100%;
+    margin: 0; } }
 
 .Porfile-Text p {
-  color: white;
-  font-family: "Roboto", sans-serif;
   font-size: 1em;
   font-weight: 300;
+  color: white;
+  font-family: "Roboto", sans-serif;
   margin: 2em 1em;
   padding-bottom: 2em; }
+  @media (min-width: 768px) {
+    .Porfile-Text p {
+      text-align: left;
+      font-size: 1.2em;
+      order: -1;
+      margin: 2em 0; } }
 
 /*-----Content------*/
 .menupoint {
@@ -137,24 +238,44 @@ nav a {
 
 .menupoint a {
   color: #4a4a4a; }
+  @media (min-width: 768px) {
+    .menupoint a {
+      padding-top: 4em; } }
 
 .work-examples p {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   width: 90%;
   margin: 1em 5%; }
+  @media (min-width: 768px) {
+    .work-examples p {
+      margin: 2em 5%; } }
+  @media (min-width: 1024px) {
+    .work-examples p {
+      margin: 2em 5% 3em 5%; } }
 
 /*-----Footer------*/
 footer .text-footer {
-  font-family: "Roboto", sans-serif;
   font-size: 1em;
   color: #003173;
+  font-family: "Roboto", sans-serif;
   border-bottom: 1px; }
+  @media (min-width: 768px) {
+    footer .text-footer {
+      width: 70%;
+      margin: 0 15%; } }
+
+@media (min-width: 768px) {
+  .text-footer p {
+    font-size: 1.2em; } }
 
 .back-to-top {
   color: #4a4a4a;
   margin: 2.5%;
   width: auto; }
+  @media (min-width: 768px) {
+    .back-to-top {
+      display: none; } }
 
 .bottom p {
   margin: 1em;

@@ -32,6 +32,16 @@ $stack-roboto: 'Roboto', $stack-sans-serif;
 $stack-monserrat: 'Montserrat', $stack-sans-serif;
 
 /* =================================
+Text Mixin
+==================================== */
+
+@mixin text($size: null, $weight: null, $color: null){
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+/* =================================
 Breakpoints
 ==================================== */
 

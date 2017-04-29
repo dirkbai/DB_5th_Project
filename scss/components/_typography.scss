@@ -1,35 +1,52 @@
 /*-----Header------*/
 .name a{
-	color: #eee;
+	color: $white;
 }
 
 .name {
 	margin: 0;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	@media #{$br-tablet}{
+		padding: 2em 0 .7em 0;
+	}
+	@media #{$br-screen}{
+		width: 40%;
+		padding: 0;
+		text-align: left;
+	}
 }
 
-nav a {
-	color: $gray;
-}
 
-.main-nav li{
-	margin: .5em 1em;
-	padding: 1em;
-	background-color: $white;
-	font-weight: 700;
-	text-transform: uppercase;
-}
 
+
+
+
+
+.Porfile-Text {
+	@media  #{$br-tablet}{
+	width: 95%;
+	margin: 2em 2.5%;
+	flex-direction: row;
+	}
+	@media #{$br-screen}{
+	width: 100%;
+	margin: 0;
+	}
+}
 
 .Porfile-Text p{
+	@include text(1em, 300, $color: $white);
 	@extend %centered;
-	color: $white;
 	font-family: 'Roboto', $stack-sans-serif;
-	font-size: 1em;
-	font-weight: 300;
-		margin: 2em 1em;
+	margin: 2em 1em;
 	padding-bottom: 2em;
+	@media #{$br-tablet}{
+		text-align: left;
+		font-size: 1.2em;
+		order: -1;
+		margin: 2em 0;
+	}
 }
 
 /*-----Content------*/
@@ -48,6 +65,9 @@ nav a {
 
 .menupoint a {
 	color: $gray;
+	@media #{$br-tablet}{
+		padding-top: 4em;
+	}
 }
 
 .work-examples p{
@@ -55,24 +75,42 @@ nav a {
 	font-size: 1em;
 	width: 90%;
 	margin: 1em 5%;
+	@media #{$br-tablet}{
+			margin: 2em 5%;
+	}
+	@media #{$br-screen}{
+			margin: 2em 5% 3em 5%;
+	}
 }
 
 /*-----Footer------*/
 
 
 footer .text-footer{
+	@include text(1em, $color: $blue);
 	@extend %centered;
 	font-family: 'Roboto', $stack-sans-serif;
-	font-size: 1em;
-	color: $blue;
 	border-bottom: 1px;
+	@media #{$br-tablet}{
+		width: 70%;
+		margin: 0 15%;
+	}
+}
+
+.text-footer p {
+	@media #{$br-tablet}{
+		font-size: 1.2em;
+	}
 }
 
 .back-to-top {
-@extend %right;
-color: $gray;
-margin: 2.5%;
-width: auto;
+	@include text($color: $gray);
+	@extend %right;
+	margin: 2.5%;
+	width: auto;
+	@media #{$br-tablet}{
+		display: none;
+	}
 }
 
 

@@ -1,9 +1,9 @@
 
 
 body {
+	@include text($color: $white);
 	font-family: 'Montserrat', $stack-sans-serif;
 	line-height: 1.6;
-	color: $white;
 	display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -13,21 +13,15 @@ body {
 
 }
 
-.wrapper-Portfolio,
-.wrapper-Skills {
-	flex: 1;
-	display: flex;
-	flex-wrap: wrap;
+nav a {
+	color: $gray;
+	@media #{$br-tablet}{
+		color: $white;
+	}
 }
 
 ul {
 	list-style: none;
-}
-
-h2{
-	font-weight: 700;
-	font-size: 1em;
-	text-transform: uppercase;
 }
 
 a {
@@ -41,8 +35,11 @@ a {
 footer{
 		background-color: #fafafa;
 		display: flex;
+			@media #{$br-screen}{
+				width: 95%;
+				margin: 2em 2.5%;
+			}
 }
-
 
 .main-header,
   .menu,
