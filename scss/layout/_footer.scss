@@ -11,6 +11,22 @@
 	}
 }
 
+.text-footer{
+	@include text(1em, $color: $blue);
+	@extend %centered;
+	font-family: 'Roboto', $stack-sans-serif;
+	border-bottom: 1px;
+	@media #{$br-tablet}{
+		width: 70%;
+		margin: 0 15%;
+	}
+	& p {
+		@media #{$br-tablet}{
+			font-size: 1.2em;
+		}
+	}
+}
+
 
 .bottom{
 	width: 95%;
@@ -20,6 +36,11 @@
 	border-top-style:solid;
 	display: flex;
 	justify-content: space-between;
+	& p{
+		margin: 1em;
+		color: $gray;
+		align-self: center;
+	}
 }
 
 
@@ -44,5 +65,15 @@
 		@media #{$br-tablet}{
 		color: #4a4a4a;
 		}
+	}
+}
+
+.back-to-top {
+	@include text($color: $gray);
+	@extend %right;
+	margin: 2.5%;
+	width: auto;
+	@media #{$br-tablet}{
+		display: none;
 	}
 }

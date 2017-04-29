@@ -7,6 +7,15 @@
 		}
 }
 
+.menu {
+	@extend %centered;
+		width: 100%;
+	@media #{$br-screen}{
+		margin: 3em 0;
+		flex-direction: row;
+	}
+}
+
 .main-nav{
 	@media #{$br-tablet}{
 			flex-direction: row;
@@ -37,19 +46,53 @@
 		}
 }
 
+.name {
+	margin: 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	@media #{$br-tablet}{
+		padding: 2em 0 .7em 0;
+	}
+	@media #{$br-screen}{
+		width: 40%;
+		padding: 0;
+		text-align: left;
+	}
+	& a{
+		color: $white;
+	}
+}
+
+.Porfile-Text {
+	@media  #{$br-tablet}{
+	width: 95%;
+	margin: 2em 2.5%;
+	flex-direction: row;
+	}
+	@media #{$br-screen}{
+	width: 100%;
+	margin: 0;
+	}
+	& p{
+		@include text(1em, 300, $color: $white);
+		@extend %centered;
+		font-family: 'Roboto', $stack-sans-serif;
+		margin: 2em 1em;
+		padding-bottom: 2em;
+		@media #{$br-tablet}{
+			text-align: left;
+			font-size: 1.2em;
+			order: -1;
+			margin: 2em 0;
+		}
+	}
+}
+
+
 .profile-image {
 			object-fit: contain;
 	    margin: 2em 1em;
 			@media #{$br-tablet}{
 				 margin: 2em 0 2em 1em;
 			}
-}
-
-.menu {
-	@extend %centered;
-		width: 100%;
-	@media #{$br-screen}{
-		margin: 3em 0;
-		flex-direction: row;
-	}
 }

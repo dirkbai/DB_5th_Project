@@ -1,7 +1,7 @@
 /* =================================
 Text align
 ==================================== */
-.menu, .work-examples, .Porfile-Text p, .menupoint, footer .text-footer {
+.menu, .Porfile-Text p, .menupoint, .work-examples, .text-footer {
   text-align: center; }
 
 .bottom-nav, .back-to-top {
@@ -69,6 +69,13 @@ footer {
     margin: auto;
     background: none; } }
 
+.menu {
+  width: 100%; }
+  @media (min-width: 1024px) {
+    .menu {
+      margin: 3em 0;
+      flex-direction: row; } }
+
 @media (min-width: 768px) {
   .main-nav {
     flex-direction: row; } }
@@ -96,19 +103,50 @@ footer {
       width: auto;
       margin-left: 5%; } }
 
+.name {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    .name {
+      padding: 2em 0 .7em 0; } }
+  @media (min-width: 1024px) {
+    .name {
+      width: 40%;
+      padding: 0;
+      text-align: left; } }
+  .name a {
+    color: white; }
+
+@media (min-width: 768px) {
+  .Porfile-Text {
+    width: 95%;
+    margin: 2em 2.5%;
+    flex-direction: row; } }
+@media (min-width: 1024px) {
+  .Porfile-Text {
+    width: 100%;
+    margin: 0; } }
+.Porfile-Text p {
+  font-size: 1em;
+  font-weight: 300;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 2em 1em;
+  padding-bottom: 2em; }
+  @media (min-width: 768px) {
+    .Porfile-Text p {
+      text-align: left;
+      font-size: 1.2em;
+      order: -1;
+      margin: 2em 0; } }
+
 .profile-image {
   object-fit: contain;
   margin: 2em 1em; }
   @media (min-width: 768px) {
     .profile-image {
       margin: 2em 0 2em 1em; } }
-
-.menu {
-  width: 100%; }
-  @media (min-width: 1024px) {
-    .menu {
-      margin: 3em 0;
-      flex-direction: row; } }
 
 .wrapper-Portfolio,
 .wrapper-Skills {
@@ -128,6 +166,19 @@ footer {
       background: white;
       padding-bottom: 5em; } }
 
+.menupoint {
+  width: 100%;
+  margin: 2em 1em;
+  padding: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  align-self: center; }
+  .menupoint a {
+    color: #4a4a4a; }
+    @media (min-width: 768px) {
+      .menupoint a {
+        padding-top: 4em; } }
+
 .content-image {
   width: 100%;
   margin: 1em 0; }
@@ -142,6 +193,17 @@ footer {
     .work-examples {
       width: 48%;
       margin: 0 0.75%; } }
+  .work-examples p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    width: 90%;
+    margin: 1em 5%; }
+    @media (min-width: 768px) {
+      .work-examples p {
+        margin: 2em 5%; } }
+    @media (min-width: 1024px) {
+      .work-examples p {
+        margin: 2em 5% 3em 5%; } }
 
 @media (min-width: 1024px) {
   .wrapper-Portfolio .work-examples {
@@ -160,6 +222,19 @@ footer {
     .wrapper-footer {
       padding-bottom: 1em; } }
 
+.text-footer {
+  font-size: 1em;
+  color: #003173;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 1px; }
+  @media (min-width: 768px) {
+    .text-footer {
+      width: 70%;
+      margin: 0 15%; } }
+  @media (min-width: 768px) {
+    .text-footer p {
+      font-size: 1.2em; } }
+
 .bottom {
   width: 95%;
   margin: 2em 2.5% 0 2.5%;
@@ -168,6 +243,10 @@ footer {
   border-top-style: solid;
   display: flex;
   justify-content: space-between; }
+  .bottom p {
+    margin: 1em;
+    color: #4a4a4a;
+    align-self: center; }
 
 .bottom-nav {
   display: none;
@@ -186,89 +265,6 @@ footer {
     .bottom-nav a {
       color: #4a4a4a; } }
 
-/*-----Header------*/
-.name a {
-  color: white; }
-
-.name {
-  margin: 0;
-  padding-top: 30px;
-  padding-bottom: 30px; }
-  @media (min-width: 768px) {
-    .name {
-      padding: 2em 0 .7em 0; } }
-  @media (min-width: 1024px) {
-    .name {
-      width: 40%;
-      padding: 0;
-      text-align: left; } }
-
-@media (min-width: 768px) {
-  .Porfile-Text {
-    width: 95%;
-    margin: 2em 2.5%;
-    flex-direction: row; } }
-@media (min-width: 1024px) {
-  .Porfile-Text {
-    width: 100%;
-    margin: 0; } }
-
-.Porfile-Text p {
-  font-size: 1em;
-  font-weight: 300;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  margin: 2em 1em;
-  padding-bottom: 2em; }
-  @media (min-width: 768px) {
-    .Porfile-Text p {
-      text-align: left;
-      font-size: 1.2em;
-      order: -1;
-      margin: 2em 0; } }
-
-/*-----Content------*/
-.menupoint {
-  width: 100%;
-  margin: 2em 1em;
-  padding: 1em;
-  font-weight: 700;
-  text-transform: uppercase;
-  align-self: center; }
-
-.menupoint a {
-  color: #4a4a4a; }
-  @media (min-width: 768px) {
-    .menupoint a {
-      padding-top: 4em; } }
-
-.work-examples p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1em;
-  width: 90%;
-  margin: 1em 5%; }
-  @media (min-width: 768px) {
-    .work-examples p {
-      margin: 2em 5%; } }
-  @media (min-width: 1024px) {
-    .work-examples p {
-      margin: 2em 5% 3em 5%; } }
-
-/*-----Footer------*/
-footer .text-footer {
-  font-size: 1em;
-  color: #003173;
-  font-family: "Roboto", sans-serif;
-  border-bottom: 1px; }
-  @media (min-width: 768px) {
-    footer .text-footer {
-      width: 70%;
-      margin: 0 15%; } }
-
-@media (min-width: 768px) {
-  .text-footer p {
-    font-size: 1.2em; } }
-
 .back-to-top {
   color: #4a4a4a;
   margin: 2.5%;
@@ -276,10 +272,5 @@ footer .text-footer {
   @media (min-width: 768px) {
     .back-to-top {
       display: none; } }
-
-.bottom p {
-  margin: 1em;
-  color: #4a4a4a;
-  align-self: center; }
 
 /*# sourceMappingURL=application.css.map */

@@ -15,6 +15,22 @@
 	}
 }
 
+.menupoint {
+	@extend %centered;
+	width: 100%;
+	margin: 2em 1em;
+	padding: 1em;
+	font-weight: 700;
+	text-transform: uppercase;
+	align-self: center;
+	& a {
+		color: $gray;
+		@media #{$br-tablet}{
+			padding-top: 4em;
+		}
+	}
+}
+
 .content-image{
 	width: 100%;
 	margin: 1em 0;
@@ -30,7 +46,18 @@
 	@media #{$br-tablet}{
 		width: 48%;
 		margin: 0 0.75%;
-
+	}
+	& p{
+		font-family: 'Roboto', $stack-sans-serif;
+		font-size: 1em;
+		width: 90%;
+		margin: 1em 5%;
+		@media #{$br-tablet}{
+				margin: 2em 5%;
+		}
+		@media #{$br-screen}{
+				margin: 2em 5% 3em 5%;
+		}
 	}
 }
 
