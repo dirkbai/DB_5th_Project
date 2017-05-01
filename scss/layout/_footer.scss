@@ -46,7 +46,7 @@
 
 
 .bottom-nav{
-	@extend %right;
+	@extend %I_am_Groot;
 	display: none;
 	margin: 1em;
 	@media #{$br-tablet}{
@@ -70,7 +70,7 @@
 
 .back-to-top {
 	@include text($color: $gray);
-	@extend %right;
+	@extend %I_am_Groot;
 	margin: 2.5%;
 	width: auto;
 	@media #{$br-tablet}{
